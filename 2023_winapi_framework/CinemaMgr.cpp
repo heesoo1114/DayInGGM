@@ -10,7 +10,7 @@ void CinemaMgr::Init(HWND hWnd)
 
 void CinemaMgr::VideoStart(HWND hWnd, POINT point)
 {
-	MoveWindow(m_hVideo, 100, 50, point.x - 200, point.y- 200, false);
+	MoveWindow(m_hVideo, 100, 50, point.x - 200, point.y - 200, false);
 	MCIWndPlay(m_hVideo);
 }
 

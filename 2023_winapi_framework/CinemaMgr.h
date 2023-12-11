@@ -16,12 +16,11 @@ private:
 	HWND m_hVideo;
 public:
 	bool isPaused = false;
-	int currentIndex = 0;
+	int currentIndex = 2;
 	LPCWSTR path;
-	LPCWSTR pathList[15] =
+	LPCWSTR pathList[18] =
 	{
-		L"Res\\Video\\0.wmv",
-		L"Res\\Video\\1.wmv",
+		L"Res\\Video\\2.wmv", // -> 나중에 1로
 		L"Res\\Video\\2.wmv",
 		L"Res\\Video\\3.wmv",
 		L"Res\\Video\\4.wmv",
@@ -35,6 +34,8 @@ public:
 		L"Res\\Video\\12.wmv",
 		L"Res\\Video\\13.wmv",
 		L"Res\\Video\\14.wmv",
+		L"Res\\Video\\15.wmv",
+		L"Res\\Video\\16.wmv",
 	};
 };
 

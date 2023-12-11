@@ -65,6 +65,9 @@
     <Filter Include="Engine\03. Manager\CinemaMgr">
       <UniqueIdentifier>{8782469b-57db-4699-9a03-d8c7df61cb84}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\03. Manager\ButtonMgr">
+      <UniqueIdentifier>{7f884250-a329-494c-9152-d35cab48087a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -160,6 +163,9 @@
     <ClInclude Include="CinemaMgr.h">
       <Filter>Engine\03. Manager\CinemaMgr</Filter>
     </ClInclude>
+    <ClInclude Include="ButtonMgr.h">
+      <Filter>Engine\03. Manager\ButtonMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="2023_winapi_framework.rc">
@@ -249,6 +255,9 @@
     </ClCompile>
     <ClCompile Include="CinemaMgr.cpp">
       <Filter>Engine\03. Manager\CinemaMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonMgr.cpp">
+      <Filter>Engine\03. Manager\ButtonMgr</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
