@@ -5,6 +5,7 @@ void CinemaMgr::Init(HWND hWnd)
 {
 	// 비디오 윈도우 핸들에 세팅 및 
 	path = pathList[0];
+	isChoiceVideo = true;
 	m_hVideo = MCIWndCreate(hWnd, nullptr, WS_CHILD | WS_VISIBLE | MCIWNDF_NOPLAYBAR, path);
 }
 
@@ -24,6 +25,8 @@ void CinemaMgr::VideoChange(HWND hWnd, POINT point, int index)
 	MoveWindow(m_hVideo, 0, 0, point.x, point.y, false);
 	
 	VideoStart(hWnd, point);
+
+	isChoiceVideo = !isChoiceVideo;
 }
 
 void CinemaMgr::VideoStop()

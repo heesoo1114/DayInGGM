@@ -79,18 +79,25 @@ void Core::Update()
 		int nextIndex = ButtonMgr::GetInst()->selectedBtn;
 		int currentIndex = CinemaMgr::GetInst()->currentIndex;
 
-		// A 선택
-		if (currentIndex % 2 == 0)
-		{
-			nextIndex = 1;
-		}
-		// B 선택
+		int passIndex = 0;
+		
+		// 선택이 진행되는 영상이면
 		if (currentIndex % 3 == 0)
 		{
-			
+			passIndex = nextIndex;
+		}
+		// A 영상이라면
+		else if (currentIndex % 3 == 1)
+		{
+			passIndex = 2;
+		}
+		// B 영상이라면
+		else if (currentIndex % 3 == 2)
+		{
+			passIndex = 1;
 		}
 
-		CinemaMgr::GetInst()->VideoChange(m_hWnd, m_ptResolution, nextIndex);
+		CinemaMgr::GetInst()->VideoChange(m_hWnd, m_ptResolution, passIndex);
 		ButtonMgr::GetInst()->selectedBtn = 0;
 	}
 
