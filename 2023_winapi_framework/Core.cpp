@@ -60,7 +60,6 @@ void Core::Update()
 	KeyMgr::GetInst()->Update();
 	SceneMgr::GetInst()->Update();
 	CollisionMgr::GetInst()->Update();
-	// CinemaMgr::GetInst()->GetHandle();
 
 	// 오른쪽 버튼으로
 	if (KEY_DOWN(KEY_TYPE::RIGHT))
@@ -68,7 +67,7 @@ void Core::Update()
 		ButtonMgr::GetInst()->Right();
 	}
 	// 왼쪽 버튼으로
-	if (KEY_DOWN(KEY_TYPE::LEFT))
+	else if (KEY_DOWN(KEY_TYPE::LEFT))
 	{
 		ButtonMgr::GetInst()->Left();
 	}

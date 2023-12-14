@@ -17,13 +17,16 @@ private:
 public:
 	bool isChoiceVideo = true;
 	bool isPaused = false;
-	int currentIndex = 0;
+	int currentIndex = 3;
 	LPCWSTR path;
-	LPCWSTR pathList[18] =
+	LPCWSTR pathList[19] =
 	{
-		L"Res\\Video\\1.wmv", // -> 나중에 1로
+		L"Res\\Video\\1.wmv", 
+		L"Res\\Video\\1.wmv",
+		L"Res\\Video\\1.wmv",
+		L"Res\\Video\\1.wmv", // 여기부터 시작인데
 		L"Res\\Video\\2.wmv",
-		L"Res\\Video\\3.wmv",
+		L"Res\\Video\\3.wmv", 
 		L"Res\\Video\\4.wmv",
 		L"Res\\Video\\5.wmv",
 		L"Res\\Video\\6.wmv",

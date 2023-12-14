@@ -4,7 +4,8 @@
 void CinemaMgr::Init(HWND hWnd)
 {
 	// 비디오 윈도우 핸들에 세팅 및 
-	path = pathList[0];
+	currentIndex = 3;
+	path = pathList[currentIndex];
 	isChoiceVideo = true;
 	m_hVideo = MCIWndCreate(hWnd, nullptr, WS_CHILD | WS_VISIBLE | MCIWNDF_NOPLAYBAR, path);
 }
