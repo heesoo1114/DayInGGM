@@ -80,6 +80,11 @@ void Core::Update()
 
 		int passIndex = 1;
 		
+		if (currentIndex >= 13)
+		{
+			return;
+		}
+
 		// 선택이 진행되는 영상이면
 		if (currentIndex % 3 == 0)
 		{

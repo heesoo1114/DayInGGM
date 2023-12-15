@@ -1,12 +1,54 @@
-﻿  Player.cpp
-LINK : warning C4727: 타임스탬프가 동일한 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\2023_winapi_framework.pch PCH가 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\bullet.obj 및 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\basewindow.obj에 있습니다.  첫 번째 PCH를 사용합니다.
-LINK : warning C4727: 타임스탬프가 동일한 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\2023_winapi_framework.pch PCH가 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\collisionmgr.obj 및 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\collider.obj에 있습니다.  첫 번째 PCH를 사용합니다.
-LINK : warning C4727: 타임스탬프가 동일한 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\2023_winapi_framework.pch PCH가 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\keymgr.obj 및 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\game_scene.obj에 있습니다.  첫 번째 PCH를 사용합니다.
-LINK : warning C4727: 타임스탬프가 동일한 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\2023_winapi_framework.pch PCH가 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\scenemgr.obj 및 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\scene.obj에 있습니다.  첫 번째 PCH를 사용합니다.
-LINK : warning C4727: 타임스탬프가 동일한 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\2023_winapi_framework.pch PCH가 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\texture.obj 및 c:\users\user\downloads\2023_winapi_framework\2023_winapi_framework\x64\release\start_scene.obj에 있습니다.  첫 번째 PCH를 사용합니다.
-  코드를 생성하고 있습니다.
-  2 of 944 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
-  코드를 생성했습니다.
-  2023_winapi_framework.vcxproj -> C:\Users\user\Downloads\2023_winapi_framework\Output\bin\2023_winapi_framework.exe
+﻿  Animation.cpp
+  Animator.cpp
+  BaseWindow.cpp
+  Bullet.cpp
+  ButtonMgr.cpp
+  CinemaMgr.cpp
+  Collider.cpp
+  CollisionMgr.cpp
+  Core.cpp
+  EventMgr.cpp
+  Game_Scene.cpp
+  KeyMgr.cpp
+  main.cpp
+  Monster.cpp
+  Object.cpp
+  PathMgr.cpp
+  Player.cpp
+  Res.cpp
+  ResMgr.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\xstring(2765,53): warning C4244: '인수': 'wchar_t'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\xstring(2621,17): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned __int64
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\xstring(3464,32): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<wchar_t*,0>(_Iter,_Iter,const _Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *,
+              _Alloc=std::allocator<char>
+          ]
+D:\GitHub\DayInGGM\2023_winapi_framework\ResMgr.cpp(77,8): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(const _Iter,const _Iter)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>
+          ]
+D:\GitHub\DayInGGM\2023_winapi_framework\ResMgr.cpp(77,15): message : 'ResMgr::LoadSound'에서 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign'에 대한 첫 번째 참조를 확인하세요.
+  Scene.cpp
+  SceneMgr.cpp
+  SelectGDI.cpp
+  Start_Scene.cpp
+  Texture.cpp
+  TimeMgr.cpp
+  Vec2.cpp
+Animation.obj : warning LNK4075: '/EDITANDCONTINUE'이(가) '/OPT:ICF' 사양으로 인해 무시됩니다.
+  2023_winapi_framework.vcxproj -> D:\GitHub\DayInGGM\Output\bin\2023_winapi_framework.exe

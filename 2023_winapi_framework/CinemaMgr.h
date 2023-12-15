@@ -19,7 +19,7 @@ public:
 	bool isPaused = false;
 	int currentIndex = 2;
 	LPCWSTR path;
-	LPCWSTR pathList[19] =
+	LPCWSTR pathList[15] =
 	{
 		L"Res\\Video\\1.wmv", 
 		L"Res\\Video\\1.wmv",
@@ -36,10 +36,6 @@ public:
 		L"Res\\Video\\9.wmv",
 		L"Res\\Video\\10.wmv",
 		L"Res\\Video\\11.wmv",
-		L"Res\\Video\\12.wmv",
-		L"Res\\Video\\13.wmv",
-		L"Res\\Video\\14.wmv",
-		L"Res\\Video\\15.wmv",
 	};
 };
 
