@@ -78,7 +78,7 @@ void Core::Update()
 		int nextIndex = ButtonMgr::GetInst()->selectedBtn;
 		int currentIndex = CinemaMgr::GetInst()->currentIndex;
 
-		int passIndex = 0;
+		int passIndex = 1;
 		
 		// 선택이 진행되는 영상이면
 		if (currentIndex % 3 == 0)
@@ -97,7 +97,6 @@ void Core::Update()
 		}
 
 		CinemaMgr::GetInst()->VideoChange(m_hWnd, m_ptResolution, passIndex);
-		ButtonMgr::GetInst()->selectedBtn = 0;
 	}
 
 #pragma region 폐기
